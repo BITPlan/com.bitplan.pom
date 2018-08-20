@@ -1,11 +1,13 @@
 ### Creator 
-[![BITPlan](http://wiki.bitplan.com/images/wiki/thumb/8/87/BITPlanLogo2012.svg/200px-BITPlanLogo2012.svg.png)](http://www.bitplan.com)
+[![BITPlan](http://wiki.bitplan.com/images/wiki/thumb/3/38/BITPlanLogoFontLessTransparent.png/198px-BITPlanLogoFontLessTransparent.png)](http://www.bitplan.com)
 ### Projects using this parent pom configuration
-  * [Mediawiki-Japi - Java library to call Mediawiki api](https://WolfgangFahl.github.io/Mediawiki-Japi)
-  * [com.bitplan.antlr - Library with helpers for ANTLR Language development](https://BITPlan.github.io/com.bitplan.antlr)
-  * [com.bitplan.fritzbox - Java library to call FritzBox HomeAutomation Api](https://BITPlan.github.io/com.bitplan.fritzbox)
-  * [com.bitplan.gui - generic GUI interface description](https://BITPlan.github.io/com.bitplan.gui)
-  * [com.bitplan.javafx - javafx controls and utilities](https://BITPlan.github.io/com.bitplan.javafx)
-  * [com.bitplan.pom - definition of common generic maven aspects of BITPlan's projects](https://BITPlan.github.io/com.bitplan.pom)
-  * [com.bitplan.simplerest - Needed Base Utilities and Functions for Jersey 1.x RESTFul applications](https://BITPlan.github.io/com.bitplan.simplerest)
-  * [com.bitplan.simplerest-api - API for Jersey 1.x based apps](https://BITPlan.github.io/com.bitplan.simplerest-api)
+| Github        | Maven         | Project pages  | 
+| ------------- | ------------- | ---------------| 
+| [WolfgangFahl/Mediawiki-Japi](https://github.com/WolfgangFahl/Mediawiki-Japi) | [com.bitplan/mediawiki-japi/0.1.02](https://search.maven.org/artifact/com.bitplan/mediawiki-japi/0.1.02/jar)      |   [Java library to call Mediawiki api](https://WolfgangFahl.github.io/Mediawiki-Japi) |
+| [BITPlan/com.bitplan.antlr](https://github.com/BITPlan/com.bitplan.antlr) | [com.bitplan.antlr/com.bitplan.antlr/0.0.7](https://search.maven.org/artifact/com.bitplan.antlr/com.bitplan.antlr/0.0.7/jar)      |   [Library with helpers for ANTLR Language development](https://BITPlan.github.io/com.bitplan.antlr) |
+| [BITPlan/com.bitplan.fritzbox](https://github.com/BITPlan/com.bitplan.fritzbox) | [com.bitplan/com.bitplan.fritzbox/0.0.4](https://search.maven.org/artifact/com.bitplan/com.bitplan.fritzbox/0.0.4/jar)      |   [Java library to call FritzBox HomeAutomation Api](https://BITPlan.github.io/com.bitplan.fritzbox) |
+| [BITPlan/com.bitplan.gui](https://github.com/BITPlan/com.bitplan.gui) | [com.bitplan.gui/com.bitplan.gui/0.0.12](https://search.maven.org/artifact/com.bitplan.gui/com.bitplan.gui/0.0.12/jar)      |   [generic GUI interface description](https://BITPlan.github.io/com.bitplan.gui) |
+| [BITPlan/com.bitplan.javafx](https://github.com/BITPlan/com.bitplan.javafx) | [com.bitplan.gui/com.bitplan.javafx/0.0.18](https://search.maven.org/artifact/com.bitplan.gui/com.bitplan.javafx/0.0.18/jar)      |   [javafx controls and utilities](https://BITPlan.github.io/com.bitplan.javafx) |
+| [BITPlan/com.bitplan.pom](https://github.com/BITPlan/com.bitplan.pom) | [com.bitplan.pom/com.bitplan.pom/0.0.6](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.6/jar)      |   [definition of common generic maven aspects of BITPlan's projects](https://BITPlan.github.io/com.bitplan.pom) |
+| [BITPlan/com.bitplan.simplerest](https://github.com/BITPlan/com.bitplan.simplerest) | [com.bitplan.rest/com.bitplan.simplerest/0.0.11](https://search.maven.org/artifact/com.bitplan.rest/com.bitplan.simplerest/0.0.11/jar)      |   [Needed Base Utilities and Functions for Jersey 1.x RESTFul applications](https://BITPlan.github.io/com.bitplan.simplerest) |
+| [BITPlan/com.bitplan.simplerest-api](https://github.com/BITPlan/com.bitplan.simplerest-api) | [com.bitplan.rest/com.bitplan.simplerest-api/0.0.8](https://search.maven.org/artifact/com.bitplan.rest/com.bitplan.simplerest-api/0.0.8/jar)      |   [API for Jersey 1.x based apps](https://BITPlan.github.io/com.bitplan.simplerest-api) |
