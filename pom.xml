@@ -49,6 +49,8 @@
 		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
 		<github.global.server>github</github.global.server>
 		<github.project>com.bitplan.pom</github.project>
+		<!-- https://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete -->
+		<javadoc.opts>-Xdoclint:none</javadoc.opts>
 		<!-- https://mvnrepository.com/artifact/com.mycila/license-maven-plugin 
 			(latest: 3.0 Aug 2016) we purposely use an older version -->
 		<com.mycila.maven-license-plugin.version>1.9.0</com.mycila.maven-license-plugin.version>
@@ -56,6 +58,8 @@
 		<nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
 		<!-- Maven Plugins https://mvnrepository.com/artifact/org.apache.maven.plugins -->
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
 		<maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
@@ -96,12 +100,25 @@
 			<!-- Maven plugins -->
 			<plugin>
 				<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${maven-compiler-plugin.version}</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<!-- sure-fire (test) plugin https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven-surefire-plugin.version}</version>
+				<configuration>
+					<excludes>
+						<!-- JUnit4 TestSuites -->
+						<exclude>**/TestSuite.java</exclude>
+						<exclude>**/TestDebug.java</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -124,6 +141,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>${maven-javadoc-plugin.version}</version>
+				<configuration>
+					<additionalparam>${javadoc.opts}</additionalparam>
+					<additionalOptions>${javadoc.opts}</additionalOptions>
+					<additionalJOption>${javadoc.opts}</additionalJOption>
+					<overview>${basedir}\src\main\java\overview.html</overview>
+					<verbose>true</verbose>
+				</configuration>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -229,6 +253,13 @@
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-javadoc-plugin</artifactId>
 							<version>${maven-javadoc-plugin.version}</version>
+							<configuration>
+								<additionalparam>${javadoc.opts}</additionalparam>
+								<additionalOptions>${javadoc.opts}</additionalOptions>
+								<additionalJOption>${javadoc.opts}</additionalJOption>
+								<overview>${basedir}\src\main\java\overview.html</overview>
+								<verbose>true</verbose>
+							</configuration>
 						</plugin>
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
@@ -246,26 +277,4 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	<profiles>
-		<!-- Work around Oracle's (IMHO silly) decision to make doclint default. 
-			http://blog.joda.org/2014/02/turning-off-doclint-in-jdk-8-javadoc.html http://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete -->
-		<profile>
-			<id>doclint-java8-disable</id>
-			<activation>
-				<jdk>[1.8,)</jdk>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>${maven-javadoc-plugin.version}</version>
-						<configuration>
-							<additionalparam>-Xdoclint:none</additionalparam>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 </project>
