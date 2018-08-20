@@ -49,6 +49,7 @@
 		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
 		<github.global.server>github</github.global.server>
 		<github.project>com.bitplan.pom</github.project>
+		<github.owner>BITPlan</github.owner>
 		<!-- https://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete -->
 		<javadoc.opts>-Xdoclint:none</javadoc.opts>
 		<!-- https://mvnrepository.com/artifact/com.mycila/license-maven-plugin 
@@ -175,8 +176,8 @@
 				<version>${site-maven-plugin.version}</version>
 				<configuration>
 					<message>Creating site for ${project.version}</message>
-					<repositoryName>com.bitplan.simplerest</repositoryName>      <!-- github repo name -->
-					<repositoryOwner>BITPlan</repositoryOwner>    <!-- github username -->
+					<repositoryName>${github.project}</repositoryName>      <!-- github repo name -->
+					<repositoryOwner>${github.owner}</repositoryOwner>    <!-- github username -->
 				</configuration>
 				<executions>
 					<execution>
