@@ -7,7 +7,7 @@
 
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.4</version>
+	<version>0.0.5</version>
 	<packaging>pom</packaging>
 
 	<name>BITPlan Maven Parent POM</name>
@@ -32,12 +32,12 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:https://github.com/BITPlan/${github.project}</connection>
-		<developerConnection>scm:git:https://github.com/BITPlan/${github.project}</developerConnection>
-		<url>https://github.com/BITPlan/${github.project}</url>
+		<connection>scm:git:https://github.com/${github.owner}</connection>
+		<developerConnection>scm:git:https://github.com/${github.owner}</developerConnection>
+		<url>https://github.com/${github.owner}</url>
 	</scm>
 	<issueManagement>
-		<url>https://github.com/BITPlan/${github.project}/issues</url>
+		<url>https://github.com/${github.owner}/${github.project}/issues</url>
 		<system>GitHub</system>
 	</issueManagement>
 	<properties>
@@ -175,7 +175,7 @@
 				<artifactId>site-maven-plugin</artifactId>
 				<version>${site-maven-plugin.version}</version>
 				<configuration>
-					<message>Creating site for ${project.version}</message>
+					<message>Creating site for ${github.owner} ${github.project} ${project.version}</message>
 					<repositoryName>${github.project}</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>${github.owner}</repositoryOwner>    <!-- github username -->
 				</configuration>
