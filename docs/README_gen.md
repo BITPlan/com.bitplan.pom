@@ -9,6 +9,7 @@ definition of common generic maven aspects of BITPlan's projects
 [![BITPlan](http://wiki.bitplan.com/images/wiki/thumb/3/38/BITPlanLogoFontLessTransparent.png/198px-BITPlanLogoFontLessTransparent.png)](http://www.bitplan.com)
 
 ### Documentation
+* [Wiki]()
 * [com.bitplan.pom Project pages](https://BITPlan.github.io/com.bitplan.pom)
 * [Javadoc](https://BITPlan.github.io/com.bitplan.pom/apidocs/index.html)
 * [Test-Report](https://BITPlan.github.io/com.bitplan.pom/surefire-report.html)
