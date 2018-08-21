@@ -3,7 +3,7 @@
 ### Projects using this parent pom configuration
 | Github        | Maven         | Project pages  | 
 | ------------- | ------------: | ---------------| 
-| [Mediawiki-Japi](https://github.com/WolfgangFahl/Mediawiki-Japi) | [0.1.02](https://search.maven.org/artifact/com.bitplan/mediawiki-japi/0.1.02/jar)      |   [Java library to call Mediawiki api](https://WolfgangFahl.github.io/Mediawiki-Japi) |
+| [Mediawiki-Japi](https://github.com/WolfgangFahl/Mediawiki-Japi) | [0.1.02](https://search.maven.org/artifact/com.bitplan/mediawiki-japi/0.1.02/jar)      |   [Java library to call Mediawiki API described at http://www.mediawiki.org/wiki/API:Main_page](https://WolfgangFahl.github.io/Mediawiki-Japi) |
 | [com.bitplan.antlr](https://github.com/BITPlan/com.bitplan.antlr) | [0.0.7](https://search.maven.org/artifact/com.bitplan.antlr/com.bitplan.antlr/0.0.7/jar)      |   [Library with helpers for ANTLR Language development](https://BITPlan.github.io/com.bitplan.antlr) |
 | [com.bitplan.fritzbox](https://github.com/BITPlan/com.bitplan.fritzbox) | [0.0.4](https://search.maven.org/artifact/com.bitplan/com.bitplan.fritzbox/0.0.4/jar)      |   [Java library to call FritzBox HomeAutomation Api](https://BITPlan.github.io/com.bitplan.fritzbox) |
 | [com.bitplan.gui](https://github.com/BITPlan/com.bitplan.gui) | [0.0.12](https://search.maven.org/artifact/com.bitplan.gui/com.bitplan.gui/0.0.12/jar)      |   [generic GUI interface description](https://BITPlan.github.io/com.bitplan.gui) |
