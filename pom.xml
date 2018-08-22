@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.8</version>
+	<version>0.0.9</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -49,6 +49,8 @@
 		<github.owner>BITPlan</github.owner>
 		<!-- https://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete -->
 		<javadoc.opts>-Xdoclint:none</javadoc.opts>
+
+		<!-- Version numbers -->
 		<!-- https://mvnrepository.com/artifact/com.mycila/license-maven-plugin 
 			(latest: 3.0 Aug 2016) we purposely use an older version -->
 		<com.mycila.maven-license-plugin.version>1.9.0</com.mycila.maven-license-plugin.version>
@@ -66,6 +68,8 @@
 		<maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
 		<maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-shade-plugin -->
+		<maven-shade-plugin.version>3.1.1</maven-shade-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
 		<maven-source-plugin.version>3.0.1</maven-source-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
@@ -85,11 +89,23 @@
 		<maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
 		<!-- https://github.com/github/maven-plugins -->
 		<site-maven-plugin.version>0.12</site-maven-plugin.version>
+
 		<!-- versions of commonly used components -->
 		<!-- https://mvnrepository.com/artifact/args4j/args4j -->
 		<args4j.version>2.33</args4j.version>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<junit4.version>4.12</junit4.version>
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlcleaner/htmlcleaner -->
+		<htmlcleaner.version>2.22</htmlcleaner.version>
+		<!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+		<commons-validator.version>1.6</commons-validator.version>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<commons-io.version>2.6</commons-io.version>
+		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker/2.3.28 -->
+		<freemarker.version>2.3.28</freemarker.version>
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox-lucene -->
+		<pdfbox-lucene.version>1.8.15</pdfbox-lucene.version>
+
 		<!-- unfortunately this line needs to be copied with cut&paste -->
 		<dependency.locations.enabled>false</dependency.locations.enabled>
 	</properties>
