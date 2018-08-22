@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.6</version>
+	<version>0.0.7</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -54,12 +54,16 @@
 		<com.mycila.maven-license-plugin.version>1.9.0</com.mycila.maven-license-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
 		<nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+		<!-- https://mvnrepository.com/artifact/com.akathist.maven.plugins.launch4j/launch4j-maven-plugin -->
+		<launch4j-maven-plugin.version>1.7.22</launch4j-maven-plugin.version>
 		<!-- Maven Plugins https://mvnrepository.com/artifact/org.apache.maven.plugins -->
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
 		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
 		<maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-antrun-plugin -->
+		<maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-assembly-plugin -->
 		<maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
@@ -146,7 +150,7 @@
 				<version>${maven-javadoc-plugin.version}</version>
 				<configuration>
 					<additionalparam>${javadoc.opts}</additionalparam>
-					<additionalOptions>${javadoc.opts}</additionalOptions>
+					<!-- <additionalOptions>${javadoc.opts}</additionalOptions>  -->
 					<additionalJOption>${javadoc.opts}</additionalJOption>
 					<overview>${basedir}\src\main\java\overview.html</overview>
 					<verbose>true</verbose>

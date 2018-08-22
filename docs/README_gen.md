@@ -2,7 +2,7 @@
 definition of common generic maven aspects of BITPlan's projects
 
 [![Travis (.org)](https://img.shields.io/travis/BITPlan/com.bitplan.javafx.svg)](https://travis-ci.org/BITPlan/com.bitplan.javafx)
-[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.6/jar)
+[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.7/jar)
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
 [![GitHub](https://img.shields.io/github/license/BITPlan/com.bitplan.pom.svg)](https://www.apache.org/licenses/LICENSE-2.0)
@@ -21,11 +21,11 @@ Maven dependency
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
-  <version>0.0.6</version>
+  <version>0.0.7</version>
 </dependency>
 ```
 
-[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.6/)
+[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.7/)
 
 ### How to build
 ```
