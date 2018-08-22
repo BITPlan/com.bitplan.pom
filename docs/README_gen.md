@@ -1,7 +1,7 @@
 ### com.bitplan.pom
 definition of common generic maven aspects of BITPlan's projects
 
-[![Travis (.org)](https://img.shields.io/travis/BITPlan/com.bitplan.javafx.svg)](https://travis-ci.org/BITPlan/com.bitplan.javafx)
+
 [![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.7/jar)
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
@@ -10,10 +10,6 @@ definition of common generic maven aspects of BITPlan's projects
 
 ### Documentation
 * [Wiki]()
-* [com.bitplan.pom Project pages](https://BITPlan.github.io/com.bitplan.pom)
-* [Javadoc](https://BITPlan.github.io/com.bitplan.pom/apidocs/index.html)
-* [Test-Report](https://BITPlan.github.io/com.bitplan.pom/surefire-report.html)
-
 ### Maven dependency
 
 Maven dependency

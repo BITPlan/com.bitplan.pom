@@ -85,11 +85,17 @@
 		<maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
 		<!-- https://github.com/github/maven-plugins -->
 		<site-maven-plugin.version>0.12</site-maven-plugin.version>
+		<!-- versions of commonly used components -->
+		<!-- https://mvnrepository.com/artifact/args4j/args4j -->
+		<args4j.version>2.33</args4j.version>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<junit4.version>4.12</junit4.version>
 		<!-- unfortunately this line needs to be copied with cut&paste -->
 		<dependency.locations.enabled>false</dependency.locations.enabled>
 	</properties>
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<!-- http://code.mycila.com/license-maven-plugin/ -->
@@ -150,7 +156,7 @@
 				<version>${maven-javadoc-plugin.version}</version>
 				<configuration>
 					<additionalparam>${javadoc.opts}</additionalparam>
-					<!-- <additionalOptions>${javadoc.opts}</additionalOptions>  -->
+					<!-- <additionalOptions>${javadoc.opts}</additionalOptions> -->
 					<additionalJOption>${javadoc.opts}</additionalJOption>
 					<overview>${basedir}\src\main\java\overview.html</overview>
 					<verbose>true</verbose>
@@ -181,7 +187,8 @@
 				<artifactId>site-maven-plugin</artifactId>
 				<version>${site-maven-plugin.version}</version>
 				<configuration>
-					<message>Creating site for ${github.owner} ${github.project} ${project.version}</message>
+					<message>Creating site for ${github.owner} ${github.project}
+						${project.version}</message>
 					<repositoryName>${github.project}</repositoryName>      <!-- github repo name -->
 					<repositoryOwner>${github.owner}</repositoryOwner>    <!-- github username -->
 				</configuration>
