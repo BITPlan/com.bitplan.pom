@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.9</version>
+	<version>0.0.10</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -175,7 +175,8 @@
 					<!-- <additionalOptions>${javadoc.opts}</additionalOptions> -->
 					<additionalJOption>${javadoc.opts}</additionalJOption>
 					<overview>${basedir}\src\main\java\overview.html</overview>
-					<verbose>true</verbose>
+					<!-- <verbose>true</verbose> -->
+					<quiet>true</quiet>
 				</configuration>
 				<executions>
 					<execution>
@@ -277,7 +278,8 @@
 				<version>${maven-javadoc-plugin.version}</version>
 				<configuration>
 					<overview>${basedir}\src\main\java\overview.html</overview>
-					<verbose>true</verbose>
+					<!--<verbose>true</verbose> -->
+					<quiet>true</quiet>
 					<additionalJOption>${javadoc.opts}</additionalJOption>
 				</configuration>
 			</plugin>
