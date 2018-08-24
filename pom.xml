@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.10</version>
+	<version>0.0.11</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -43,10 +43,15 @@
 		<!-- http://stackoverflow.com/questions/3017695/how-to-configure-encoding-in-maven -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
 		<!-- github server corresponds to entry in ~/.m2/settings.xml -->
 		<github.global.server>github</github.global.server>
+		<!-- also used by README generator script -->
 		<github.project>com.bitplan.pom</github.project>
 		<github.owner>BITPlan</github.owner>
+
+		<github.site.path>${project.version}</github.site.path>
+
 		<!-- https://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete -->
 		<javadoc.opts>-Xdoclint:none</javadoc.opts>
 
@@ -101,6 +106,8 @@
 		<commons-validator.version>1.6</commons-validator.version>
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<commons-io.version>2.6</commons-io.version>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<commons-lang3.version>3.8</commons-lang3.version>
 		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker/2.3.28 -->
 		<freemarker.version>2.3.28</freemarker.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox-lucene -->
@@ -109,9 +116,78 @@
 		<!-- unfortunately this line needs to be copied with cut&paste -->
 		<dependency.locations.enabled>false</dependency.locations.enabled>
 	</properties>
+	<!-- candidates for dependencies to be used in child poms -->
+	<dependencyManagement>
+		<dependencies>
+			<!-- commons io -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons-io.version}</version>
+			</dependency>
+			<!-- JUnit testing -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit4.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- args4j command line utility -->
+			<dependency>
+				<groupId>args4j</groupId>
+				<artifactId>args4j</artifactId>
+				<version>${args4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<!-- see http://wiki.bitplan.com/index.php/Multi-Module_Maven_with_github_pages -->
+	<distributionManagement>
+		<site>
+			<!-- Do mvn site site:stage -DstagingDirectory=/tmp/path first, then manually 
+				add/push to the gh-pages branch on GitHub) -->
+			<id>${project.artifactId}-site</id>
+			<name>${github.owner} ${project.artifactId} ${project.version} GitHub Pages</name>
+			<url>https://${github.owner}.github.io/${project.artifactId}</url> 
+		</site>
+	</distributionManagement>
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<!-- see https://stackoverflow.com/questions/10483180/maven-what-is-pluginmanagement 
+			plugins that child poms might use -->
+		<pluginManagement>
+			<plugins>
+				<!-- git hub site plugin https://github.com/github/maven-plugins configured 
+					for fixing the multi-module issue https://github.com/github/maven-plugins/issues/22 -->
+				<plugin>
+					<groupId>com.github.github</groupId>
+					<artifactId>site-maven-plugin</artifactId>
+					<version>${site-maven-plugin.version}</version>
+					<configuration>
+						<message>Creating site for ${github.owner} ${github.project}
+							${project.version} with url ${project.url}</message>
+						<repositoryName>${github.project}</repositoryName>    <!-- github repo name -->
+						<repositoryOwner>${github.owner}</repositoryOwner>    <!-- github username -->
+						<path>${github.site.path}</path>
+						<merge>true</merge>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>site</goal>
+							</goals>
+							<phase>site</phase>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<!-- http://code.mycila.com/license-maven-plugin/ -->
@@ -187,36 +263,21 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- https://maven.apache.org/plugins/maven-site-plugin/ -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>${maven-site-plugin.version}</version>
+				<!-- do not deploy (we need to get the result to gh-pages in the end) -->
+				<configuration>
+					<skipDeploy>true</skipDeploy>
+				</configuration>
 			</plugin>
 			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-project-info-reports-plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
 				<version>${maven-project-info-reports-plugin.version}</version>
-			</plugin>
-			<!-- git hub site plugin https://github.com/github/maven-plugins -->
-			<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>site-maven-plugin</artifactId>
-				<version>${site-maven-plugin.version}</version>
-				<configuration>
-					<message>Creating site for ${github.owner} ${github.project}
-						${project.version}</message>
-					<repositoryName>${github.project}</repositoryName>      <!-- github repo name -->
-					<repositoryOwner>${github.owner}</repositoryOwner>    <!-- github username -->
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>site</goal>
-						</goals>
-						<phase>site</phase>
-					</execution>
-				</executions>
 			</plugin>
 			<!-- GPG Signed Components The Maven GPG plugin is used to sign the components 
 				with the following configuration. -->
