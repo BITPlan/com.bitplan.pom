@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.12</version>
+	<version>0.0.13</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -228,7 +228,7 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
-			<!-- sure-fire (test) plugin https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+			<!-- surefire (test) plugin https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -363,11 +363,20 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
 				<version>${maven-surefire-report-plugin.version}</version>
+				<!-- https://stackoverflow.com/questions/1274523/maven-surefire-reporting-plugin-configuration -->
+				<configuration>
+					<aggregate>true</aggregate>
+					<!--also set this to link to generated source reports -->
+					<linkXRef>true</linkXRef>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jxr-plugin</artifactId>
 				<version>${maven-jxr-plugin.version}</version>
+				<configuration>
+					<aggregate>true</aggregate>
+				</configuration>
 			</plugin>
 		</plugins>
 	</reporting>
