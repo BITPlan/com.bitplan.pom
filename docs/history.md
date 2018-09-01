@@ -15,3 +15,4 @@
 | 0.0.12  | 2018-08-24 | fixes #5
 | 0.0.13  | 2018-08-25 | fixes #6
 | 0.0.14  | 2018-08-30 | adds more dependencies 
+| 0.0.15  | 2018-09-01 | adds commons-lang3 
