@@ -16,3 +16,4 @@
 | 0.0.13  | 2018-08-25 | fixes #6
 | 0.0.14  | 2018-08-30 | adds more dependencies 
 | 0.0.15  | 2018-09-01 | adds commons-lang3 
+| 0.0.16  | 2018-09-02 | fixes #7 adds simplegraph modules 

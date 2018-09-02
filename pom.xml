@@ -66,7 +66,7 @@
 		<!-- Maven Plugins https://mvnrepository.com/artifact/org.apache.maven.plugins -->
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
+		<maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
 		<maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-antrun-plugin -->
@@ -87,7 +87,8 @@
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-project-info-reports-plugin -->
 		<maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-report-plugin -->
-		<maven-surefire-report-plugin.version>2.22.0</maven-surefire-report-plugin.version>
+		<!-- https://github.com/BITPlan/com.bitplan.pom/issues/7 -->
+		<maven-surefire-report-plugin.version>${maven-surefire-plugin.version}</maven-surefire-report-plugin.version>
 		<!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jxr-plugin -->
 		<maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin -->
@@ -123,8 +124,30 @@
 		<!-- versions of BITPlan libraries -->
 		<com.bitplan.javafx.version>0.0.20</com.bitplan.javafx.version>
 		<com.bitplan.gui.version>0.0.12</com.bitplan.gui.version>
-		<com.bitplan.simplegraph.excel.version>0.0.2</com.bitplan.simplegraph.excel.version>
-		<com.bitplan.simplegraph-core.version>0.0.2</com.bitplan.simplegraph-core.version>
+
+		<com.bitplan.simplegraph.bundle.version>0.0.3</com.bitplan.simplegraph.bundle.version>
+		<com.bitplan.simplegraph.caldav.version>0.0.3</com.bitplan.simplegraph.caldav.version>
+		<com.bitplan.simplegraph.carddav.version>0.0.3</com.bitplan.simplegraph.carddav.version>
+		<com.bitplan.simplegraph-core.version>0.0.3</com.bitplan.simplegraph-core.version>
+		<com.bitplan.simplegraph.excel.version>0.0.3</com.bitplan.simplegraph.excel.version>
+		<com.bitplan.simplegraph.filesystem.version>0.0.3</com.bitplan.simplegraph.filesystem.version>
+		<com.bitplan.simplegraph.geojson.version>0.0.3</com.bitplan.simplegraph.geojson.version>
+		<com.bitplan.simplegraph.github.version>0.0.3</com.bitplan.simplegraph.github.version>
+		<com.bitplan.simplegraph.html.version>0.0.3</com.bitplan.simplegraph.html.version>
+		<com.bitplan.simplegraph.java.version>0.0.3</com.bitplan.simplegraph.java.version>
+		<com.bitplan.simplegraph.json.version>0.0.3</com.bitplan.simplegraph.json.version>
+		<com.bitplan.simplegraph.mail.version>0.0.3</com.bitplan.simplegraph.mail.version>
+		<com.bitplan.simplegraph.map.version>0.0.3</com.bitplan.simplegraph.map.version>
+		<com.bitplan.simplegraph.mediawiki.version>0.0.3</com.bitplan.simplegraph.mediawiki.version>
+		<com.bitplan.simplegraph.pdf.version>0.0.3</com.bitplan.simplegraph.pdf.version>
+		<com.bitplan.simplegraph.powerpoint.version>0.0.3</com.bitplan.simplegraph.powerpoint.version>
+		<com.bitplan.simplegraph.smw.version>0.0.3</com.bitplan.simplegraph.smw.version>
+		<com.bitplan.simplegraph.snmp.version>0.0.3</com.bitplan.simplegraph.snmp.version>
+		<com.bitplan.simplegraph.sql.version>0.0.3</com.bitplan.simplegraph.sql.version>
+		<com.bitplan.simplegraph.triplestore.version>0.0.3</com.bitplan.simplegraph.triplestore.version>
+		<com.bitplan.simplegraph.wikidata.version>0.0.3</com.bitplan.simplegraph.wikidata.version>
+		<com.bitplan.simplegraph.word.version>0.0.3</com.bitplan.simplegraph.word.version>
+		<com.bitplan.simplegraph.xml.version>0.0.3</com.bitplan.simplegraph.xml.version>
 		<!-- unfortunately this line needs to be copied with cut&paste -->
 		<dependency.locations.enabled>false</dependency.locations.enabled>
 	</properties>
@@ -196,17 +219,143 @@
 				<type>test-jar</type>
 				<scope>test</scope>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph-core -->
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.bundle.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.bundle</artifactId>
+				<version>${com.bitplan.simplegraph.bundle.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.caldav.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.caldav</artifactId>
+				<version>${com.bitplan.simplegraph.caldav.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.carddav.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.carddav</artifactId>
+				<version>${com.bitplan.simplegraph.carddav.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph-core.version -->
 			<dependency>
 				<groupId>com.bitplan.simplegraph</groupId>
 				<artifactId>com.bitplan.simplegraph-core</artifactId>
 				<version>${com.bitplan.simplegraph-core.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.excel -->
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.excel.version -->
 			<dependency>
 				<groupId>com.bitplan.simplegraph</groupId>
 				<artifactId>com.bitplan.simplegraph.excel</artifactId>
 				<version>${com.bitplan.simplegraph.excel.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.filesystem.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.filesystem</artifactId>
+				<version>${com.bitplan.simplegraph.filesystem.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.geojson.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.geojson</artifactId>
+				<version>${com.bitplan.simplegraph.geojson.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.github.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.github</artifactId>
+				<version>${com.bitplan.simplegraph.github.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.html.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.html</artifactId>
+				<version>${com.bitplan.simplegraph.html.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.java.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.java</artifactId>
+				<version>${com.bitplan.simplegraph.java.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.json.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.json</artifactId>
+				<version>${com.bitplan.simplegraph.json.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.mail.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.mail</artifactId>
+				<version>${com.bitplan.simplegraph.mail.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.map.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.map</artifactId>
+				<version>${com.bitplan.simplegraph.map.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.mediawiki.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.mediawiki</artifactId>
+				<version>${com.bitplan.simplegraph.mediawiki.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.pdf.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.pdf</artifactId>
+				<version>${com.bitplan.simplegraph.pdf.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.powerpoint.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.powerpoint</artifactId>
+				<version>${com.bitplan.simplegraph.powerpoint.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.smw.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.smw</artifactId>
+				<version>${com.bitplan.simplegraph.smw.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.snmp.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.snmp</artifactId>
+				<version>${com.bitplan.simplegraph.snmp.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.sql.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.sql</artifactId>
+				<version>${com.bitplan.simplegraph.sql.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.triplestore.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.triplestore</artifactId>
+				<version>${com.bitplan.simplegraph.triplestore.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.wikidata.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.wikidata</artifactId>
+				<version>${com.bitplan.simplegraph.wikidata.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.word.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.word</artifactId>
+				<version>${com.bitplan.simplegraph.word.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.bitplan.simplegraph/com.bitplan.simplegraph.xml.version -->
+			<dependency>
+				<groupId>com.bitplan.simplegraph</groupId>
+				<artifactId>com.bitplan.simplegraph.xml</artifactId>
+				<version>${com.bitplan.simplegraph.xml.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
