@@ -17,3 +17,4 @@
 | 0.0.14  | 2018-08-30 | adds more dependencies 
 | 0.0.15  | 2018-09-01 | adds commons-lang3 
 | 0.0.16  | 2018-09-02 | fixes #7 adds simplegraph modules 
+| 0.0.17  | 2018-09-09 | fixes #8 adds conditional creation of jar and fatjar 

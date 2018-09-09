@@ -2,7 +2,7 @@
 [definition of common generic maven aspects of BITPlan's projects](https://github.com/BITPlan/com.bitplan.pom/blob/master/docs/BITPlanOSProjects.md) 
 
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.16/jar)
+[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.17/jar)
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
 [![GitHub](https://img.shields.io/github/license/BITPlan/com.bitplan.pom.svg)](https://www.apache.org/licenses/LICENSE-2.0)
@@ -17,11 +17,11 @@ Maven dependency
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
-  <version>0.0.16</version>
+  <version>0.0.17</version>
 </dependency>
 ```
 
-[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.16/)
+[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.17/)
 
 ### How to build
 ```
@@ -48,3 +48,4 @@ mvn install
 | 0.0.14  | 2018-08-30 | adds more dependencies 
 | 0.0.15  | 2018-09-01 | adds commons-lang3 
 | 0.0.16  | 2018-09-02 | fixes #7 adds simplegraph modules 
+| 0.0.17  | 2018-09-09 | fixes #8 adds conditional creation of jar and fatjar 
