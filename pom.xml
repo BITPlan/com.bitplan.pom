@@ -122,7 +122,7 @@
 		<pdfbox-lucene.version>1.8.15</pdfbox-lucene.version>
 
 		<!-- versions of BITPlan libraries -->
-		<com.bitplan.javafx.version>0.0.20</com.bitplan.javafx.version>
+		<com.bitplan.javafx.version>0.0.23</com.bitplan.javafx.version>
 		<com.bitplan.gui.version>0.0.12</com.bitplan.gui.version>
 
 		<com.bitplan.simplegraph.bundle.version>0.0.3</com.bitplan.simplegraph.bundle.version>
