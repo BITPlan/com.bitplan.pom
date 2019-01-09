@@ -2,7 +2,7 @@
 [definition of common generic maven aspects of BITPlan's projects](https://github.com/BITPlan/com.bitplan.pom/blob/master/docs/BITPlanOSProjects.md) 
 
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.17/jar)
+[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.18/jar)
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
 [![GitHub](https://img.shields.io/github/license/BITPlan/com.bitplan.pom.svg)](https://www.apache.org/licenses/LICENSE-2.0)
@@ -17,7 +17,7 @@ Maven dependency
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
-  <version>0.0.17</version>
+  <version>0.0.18</version>
 </dependency>
 ```
 
@@ -49,3 +49,4 @@ mvn install
 | 0.0.15  | 2018-09-01 | adds commons-lang3 
 | 0.0.16  | 2018-09-02 | fixes #7 adds simplegraph modules 
 | 0.0.17  | 2018-09-09 | fixes #8 adds conditional creation of jar and fatjar 
+| 0.0.18  | 2018-12-05 | upgrades gson to 2.8.5, com.bitplan.javafx to 0.0.23
