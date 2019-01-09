@@ -50,3 +50,4 @@ mvn install
 | 0.0.16  | 2018-09-02 | fixes #7 adds simplegraph modules 
 | 0.0.17  | 2018-09-09 | fixes #8 adds conditional creation of jar and fatjar 
 | 0.0.18  | 2018-12-05 | upgrades gson to 2.8.5, com.bitplan.javafx to 0.0.23
+| 0.0.19  | 2018-12-05 | upgrades com.bitplan.gui to 0.0.13 , com.bitplan.javafx to 0.0.24
