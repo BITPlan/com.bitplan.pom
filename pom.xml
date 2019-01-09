@@ -56,7 +56,7 @@
 		<javadoc.opts>-Xdoclint:none</javadoc.opts>
 
 		<!-- Version numbers -->
-		<!-- https://mvnrepository.com/artifact/com.mycila/license-maven-plugin 
+		<!-- https://mvnrepository.com/artifact/com.mycila/license-maven-plugin
 			(latest: 3.0 Aug 2016) we purposely use an older version -->
 		<com.mycila.maven-license-plugin.version>1.9.0</com.mycila.maven-license-plugin.version>
 		<!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
@@ -122,8 +122,8 @@
 		<pdfbox-lucene.version>1.8.15</pdfbox-lucene.version>
 
 		<!-- versions of BITPlan libraries -->
-		<com.bitplan.javafx.version>0.0.23</com.bitplan.javafx.version>
-		<com.bitplan.gui.version>0.0.12</com.bitplan.gui.version>
+		<com.bitplan.javafx.version>0.0.24</com.bitplan.javafx.version>
+		<com.bitplan.gui.version>0.0.13</com.bitplan.gui.version>
 
 		<com.bitplan.simplegraph.bundle.version>0.0.3</com.bitplan.simplegraph.bundle.version>
 		<com.bitplan.simplegraph.caldav.version>0.0.3</com.bitplan.simplegraph.caldav.version>
@@ -362,7 +362,7 @@
 	<!-- see http://wiki.bitplan.com/index.php/Multi-Module_Maven_with_github_pages -->
 	<distributionManagement>
 		<site>
-			<!-- Do mvn site site:stage -DstagingDirectory=/tmp/path first, then manually 
+			<!-- Do mvn site site:stage -DstagingDirectory=/tmp/path first, then manually
 				add/push to the gh-pages branch on GitHub) -->
 			<id>${project.artifactId}-site</id>
 			<name>${github.owner} ${project.artifactId} ${project.version} GitHub Pages</name>
@@ -372,11 +372,11 @@
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<testSourceDirectory>src/test/java</testSourceDirectory>
-		<!-- see https://stackoverflow.com/questions/10483180/maven-what-is-pluginmanagement 
+		<!-- see https://stackoverflow.com/questions/10483180/maven-what-is-pluginmanagement
 			plugins that child poms might use -->
 		<pluginManagement>
 			<plugins>
-				<!-- git hub site plugin https://github.com/github/maven-plugins configured 
+				<!-- git hub site plugin https://github.com/github/maven-plugins configured
 					for fixing the multi-module issue https://github.com/github/maven-plugins/issues/22 -->
 				<plugin>
 					<groupId>com.github.github</groupId>
@@ -440,8 +440,8 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<!-- see http://central.sonatype.org/pages/apache-maven.html Javadoc 
-					and Sources Attachments To get Javadoc and Source jar files generated, you 
+				<!-- see http://central.sonatype.org/pages/apache-maven.html Javadoc
+					and Sources Attachments To get Javadoc and Source jar files generated, you
 					have to configure the javadoc and source Maven plugins. -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
@@ -492,7 +492,7 @@
 				<artifactId>maven-project-info-reports-plugin</artifactId>
 				<version>${maven-project-info-reports-plugin.version}</version>
 			</plugin>
-			<!-- GPG Signed Components The Maven GPG plugin is used to sign the components 
+			<!-- GPG Signed Components The Maven GPG plugin is used to sign the components
 				with the following configuration. -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -508,10 +508,10 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- according to : http://central.sonatype.org/pages/apache-maven.html 
-				Nexus Staging Maven Plugin for Deployment and Release The Nexus Staging Maven 
-				Plugin is the recommended way to deploy your components to OSSRH and release 
-				them to the Central Repository. To configure it simply add the plugin to 
+			<!-- according to : http://central.sonatype.org/pages/apache-maven.html
+				Nexus Staging Maven Plugin for Deployment and Release The Nexus Staging Maven
+				Plugin is the recommended way to deploy your components to OSSRH and release
+				them to the Central Repository. To configure it simply add the plugin to
 				your Maven pom.xml. -->
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
@@ -626,7 +626,7 @@
 		</profile>
 		<profile>
 			<id>createAssembly</id>
-			<!-- set <createAssembly>true</createAssembly> and <assemblyMainClass>a.b.c</assemblyMainClass> 
+			<!-- set <createAssembly>true</createAssembly> and <assemblyMainClass>a.b.c</assemblyMainClass>
 				to activate -->
 			<activation>
 				<property>
@@ -650,7 +650,7 @@
 							</archive>
 						</configuration>
 					</plugin>
-					<!-- executable jar with dependencies see http://stackoverflow.com/questions/574594/how-can-i-create-an-executable-jar-with-dependencies-using-maven 
+					<!-- executable jar with dependencies see http://stackoverflow.com/questions/574594/how-can-i-create-an-executable-jar-with-dependencies-using-maven
 						run with mvn clean compile assembly:single -->
 					<plugin>
 						<artifactId>maven-assembly-plugin</artifactId>
@@ -689,7 +689,7 @@
 			</activation>
 			<build>
 				<plugins>
-					<!-- http://kosalads.blogspot.de/2013/04/maven-copy-artifact-in-to-separate.html 
+					<!-- http://kosalads.blogspot.de/2013/04/maven-copy-artifact-in-to-separate.html
 						https://stackoverflow.com/a/16862404/1497139 -->
 					<plugin>
 						<artifactId>maven-antrun-plugin</artifactId>
