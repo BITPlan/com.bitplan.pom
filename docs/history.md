@@ -20,5 +20,6 @@
 | 0.0.17  | 2018-09-09 | fixes #8 adds conditional creation of jar and fatjar
 | 0.0.18  | 2018-12-05 | upgrades gson to 2.8.5, com.bitplan.javafx to 0.0.23
 | 0.0.19  | 2019-01-09 | upgrades com.bitplan.gui to 0.0.13 , com.bitplan.javafx to 0.0.24
-| 0.0.20  | 2019-01-09 | rereleases due to pom config issues 
-| 0.0.21  | 2019-01-22 | upgrades gui to 0.0.15 javafx to 0.0.26 
+| 0.0.20  | 2019-01-09 | rereleases due to pom config issues
+| 0.0.21  | 2019-01-22 | upgrades gui to 0.0.15 javafx to 0.0.26
+| 0.0.22  | 2019-01-24 | upgrades com.bitplan.javafx to 0.0.27

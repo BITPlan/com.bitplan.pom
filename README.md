@@ -2,7 +2,7 @@
 definition of common generic maven aspects of BITPlan's projects
 
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.21/jar)
+[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.22/jar)
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
 [![GitHub](https://img.shields.io/github/license/BITPlan/com.bitplan.pom.svg)](https://www.apache.org/licenses/LICENSE-2.0)
@@ -17,11 +17,11 @@ Maven dependency
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
-  <version>0.0.21</version>
+  <version>0.0.22</version>
 </dependency>
 ```
 
-[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.21/)
+[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.22/)
 
 ### How to build
 ```
@@ -51,5 +51,6 @@ mvn install
 | 0.0.17  | 2018-09-09 | fixes #8 adds conditional creation of jar and fatjar
 | 0.0.18  | 2018-12-05 | upgrades gson to 2.8.5, com.bitplan.javafx to 0.0.23
 | 0.0.19  | 2019-01-09 | upgrades com.bitplan.gui to 0.0.13 , com.bitplan.javafx to 0.0.24
-| 0.0.20  | 2019-01-09 | rereleases due to pom config issues 
-| 0.0.21  | 2019-01-22 | upgrades gui to 0.0.15 javafx to 0.0.26 
+| 0.0.20  | 2019-01-09 | rereleases due to pom config issues
+| 0.0.21  | 2019-01-22 | upgrades gui to 0.0.15 javafx to 0.0.26
+| 0.0.22  | 2019-01-24 | upgrades com.bitplan.javafx to 0.0.27
