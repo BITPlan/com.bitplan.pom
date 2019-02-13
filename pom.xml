@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.24</version>
+	<version>0.0.25</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -120,6 +120,8 @@
 		<mockito-all.version>1.10.19</mockito-all.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox-lucene -->
 		<pdfbox-lucene.version>1.8.15</pdfbox-lucene.version>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<apache-poi.version>4.0.1</apache-poi.version>
 
 		<!-- versions of BITPlan libraries -->
 		<com.bitplan.javafx.version>0.0.28</com.bitplan.javafx.version>
