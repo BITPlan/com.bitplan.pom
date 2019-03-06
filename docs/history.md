@@ -27,3 +27,4 @@
 | 0.0.24  | 2019-02-12 | upgrades simplegraph to 0.0.4
 | 0.0.25  | 2019-02-13 | adds apache poi 4.0.1
 | 0.0.26  | 2019-02-20 | upgrades com.bitplan.javafx to 0.0.29
+| 0.0.28  | 2019-03-06 | upgrades com.bitplan.javafx to 0.0.30
