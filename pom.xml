@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.27</version>
+	<version>0.0.29</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -124,14 +124,14 @@
 		<apache-poi.version>4.0.1</apache-poi.version>
 
 		<!-- versions of BITPlan libraries -->
-		<com.bitplan.javafx.version>0.0.30</com.bitplan.javafx.version>
+		<com.bitplan.javafx.version>0.0.31</com.bitplan.javafx.version>
 		<com.bitplan.gui.version>0.0.15</com.bitplan.gui.version>
 
 		<com.bitplan.simplegraph.bundle.version>0.0.4</com.bitplan.simplegraph.bundle.version>
 		<com.bitplan.simplegraph.caldav.version>0.0.4</com.bitplan.simplegraph.caldav.version>
 		<com.bitplan.simplegraph.carddav.version>0.0.4</com.bitplan.simplegraph.carddav.version>
 		<com.bitplan.simplegraph-core.version>0.0.4</com.bitplan.simplegraph-core.version>
-		<com.bitplan.simplegraph.excel.version>0.0.4</com.bitplan.simplegraph.excel.version>
+		<com.bitplan.simplegraph.excel.version>0.0.5</com.bitplan.simplegraph.excel.version>
 		<com.bitplan.simplegraph.filesystem.version>0.0.4</com.bitplan.simplegraph.filesystem.version>
 		<com.bitplan.simplegraph.geojson.version>0.0.4</com.bitplan.simplegraph.geojson.version>
 		<com.bitplan.simplegraph.github.version>0.0.4</com.bitplan.simplegraph.github.version>
