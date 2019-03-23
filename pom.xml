@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2018 BITPlan GmbH Project details and license at: https://github.com/BITPlan/com.bitplan.pom -->
+che<!-- Copyright (c) 2018 BITPlan GmbH Project details and license at: https://github.com/BITPlan/com.bitplan.pom -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -127,29 +127,29 @@
 		<com.bitplan.javafx.version>0.0.31</com.bitplan.javafx.version>
 		<com.bitplan.gui.version>0.0.15</com.bitplan.gui.version>
 
-		<com.bitplan.simplegraph.bundle.version>0.0.4</com.bitplan.simplegraph.bundle.version>
-		<com.bitplan.simplegraph.caldav.version>0.0.4</com.bitplan.simplegraph.caldav.version>
-		<com.bitplan.simplegraph.carddav.version>0.0.4</com.bitplan.simplegraph.carddav.version>
-		<com.bitplan.simplegraph-core.version>0.0.4</com.bitplan.simplegraph-core.version>
+		<com.bitplan.simplegraph.bundle.version>0.0.5</com.bitplan.simplegraph.bundle.version>
+		<com.bitplan.simplegraph.caldav.version>0.0.5</com.bitplan.simplegraph.caldav.version>
+		<com.bitplan.simplegraph.carddav.version>0.0.5</com.bitplan.simplegraph.carddav.version>
+		<com.bitplan.simplegraph-core.version>0.0.5</com.bitplan.simplegraph-core.version>
 		<com.bitplan.simplegraph.excel.version>0.0.5</com.bitplan.simplegraph.excel.version>
-		<com.bitplan.simplegraph.filesystem.version>0.0.4</com.bitplan.simplegraph.filesystem.version>
-		<com.bitplan.simplegraph.geojson.version>0.0.4</com.bitplan.simplegraph.geojson.version>
-		<com.bitplan.simplegraph.github.version>0.0.4</com.bitplan.simplegraph.github.version>
-		<com.bitplan.simplegraph.html.version>0.0.4</com.bitplan.simplegraph.html.version>
-		<com.bitplan.simplegraph.java.version>0.0.4</com.bitplan.simplegraph.java.version>
-		<com.bitplan.simplegraph.json.version>0.0.4</com.bitplan.simplegraph.json.version>
-		<com.bitplan.simplegraph.mail.version>0.0.4</com.bitplan.simplegraph.mail.version>
-		<com.bitplan.simplegraph.map.version>0.0.4</com.bitplan.simplegraph.map.version>
-		<com.bitplan.simplegraph.mediawiki.version>0.0.4</com.bitplan.simplegraph.mediawiki.version>
-		<com.bitplan.simplegraph.pdf.version>0.0.4</com.bitplan.simplegraph.pdf.version>
-		<com.bitplan.simplegraph.powerpoint.version>0.0.4</com.bitplan.simplegraph.powerpoint.version>
-		<com.bitplan.simplegraph.smw.version>0.0.4</com.bitplan.simplegraph.smw.version>
-		<com.bitplan.simplegraph.snmp.version>0.0.4</com.bitplan.simplegraph.snmp.version>
-		<com.bitplan.simplegraph.sql.version>0.0.4</com.bitplan.simplegraph.sql.version>
-		<com.bitplan.simplegraph.triplestore.version>0.0.4</com.bitplan.simplegraph.triplestore.version>
-		<com.bitplan.simplegraph.wikidata.version>0.0.4</com.bitplan.simplegraph.wikidata.version>
-		<com.bitplan.simplegraph.word.version>0.0.4</com.bitplan.simplegraph.word.version>
-		<com.bitplan.simplegraph.xml.version>0.0.4</com.bitplan.simplegraph.xml.version>
+		<com.bitplan.simplegraph.filesystem.version>0.0.5</com.bitplan.simplegraph.filesystem.version>
+		<com.bitplan.simplegraph.geojson.version>0.0.5</com.bitplan.simplegraph.geojson.version>
+		<com.bitplan.simplegraph.github.version>0.0.5</com.bitplan.simplegraph.github.version>
+		<com.bitplan.simplegraph.html.version>0.0.5</com.bitplan.simplegraph.html.version>
+		<com.bitplan.simplegraph.java.version>0.0.5</com.bitplan.simplegraph.java.version>
+		<com.bitplan.simplegraph.json.version>0.0.5</com.bitplan.simplegraph.json.version>
+		<com.bitplan.simplegraph.mail.version>0.0.5</com.bitplan.simplegraph.mail.version>
+		<com.bitplan.simplegraph.map.version>0.0.5</com.bitplan.simplegraph.map.version>
+		<com.bitplan.simplegraph.mediawiki.version>0.0.5</com.bitplan.simplegraph.mediawiki.version>
+		<com.bitplan.simplegraph.pdf.version>0.0.5</com.bitplan.simplegraph.pdf.version>
+		<com.bitplan.simplegraph.powerpoint.version>0.0.5</com.bitplan.simplegraph.powerpoint.version>
+		<com.bitplan.simplegraph.smw.version>0.0.5</com.bitplan.simplegraph.smw.version>
+		<com.bitplan.simplegraph.snmp.version>0.0.5</com.bitplan.simplegraph.snmp.version>
+		<com.bitplan.simplegraph.sql.version>0.0.5</com.bitplan.simplegraph.sql.version>
+		<com.bitplan.simplegraph.triplestore.version>0.0.5</com.bitplan.simplegraph.triplestore.version>
+		<com.bitplan.simplegraph.wikidata.version>0.0.5</com.bitplan.simplegraph.wikidata.version>
+		<com.bitplan.simplegraph.word.version>0.0.5</com.bitplan.simplegraph.word.version>
+		<com.bitplan.simplegraph.xml.version>0.0.5</com.bitplan.simplegraph.xml.version>
 		<!-- unfortunately this line needs to be copied with cut&paste -->
 		<dependency.locations.enabled>false</dependency.locations.enabled>
 	</properties>
