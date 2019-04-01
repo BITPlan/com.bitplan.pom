@@ -2,7 +2,7 @@
 definition of common generic maven aspects of BITPlan's projects
 
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.29/jar)
+[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.30/jar)
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
 [![GitHub](https://img.shields.io/github/license/BITPlan/com.bitplan.pom.svg)](https://www.apache.org/licenses/LICENSE-2.0)
@@ -18,11 +18,11 @@ Maven dependency
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
-  <version>0.0.29</version>
+  <version>0.0.30</version>
 </dependency>
 ```
 
-[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.29/)
+[Current release at repo1.maven.org](http://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.30/)
 
 ### How to build
 ```
