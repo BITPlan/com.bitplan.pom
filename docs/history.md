@@ -30,3 +30,4 @@
 | 0.0.28  | 2019-03-06 | upgrades com.bitplan.javafx to 0.0.30
 | 0.0.29  | 2019-03-23 | upgrades com.bitplan.simplegraph-excel to 0.0.5
 | 0.0.30  | 2019-03-23 | upgrades com.bitplan.simplegraph to 0.0.5
+| 0.0.31  | 2019-04-23 | upgrades com.bitplan.javafx to 0.0.32
