@@ -32,3 +32,4 @@
 | 0.0.30  | 2019-03-23 | upgrades com.bitplan.simplegraph to 0.0.5
 | 0.0.31  | 2019-04-23 | upgrades com.bitplan.javafx to 0.0.32
 | 0.0.32  | 2019-05-16 | upgrades com.bitplan.javafx to 0.0.33
+| 0.0.33  | 2019-06-30 | adds jacoco coverage profile
