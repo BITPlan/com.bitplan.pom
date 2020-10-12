@@ -115,7 +115,7 @@
 		<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlcleaner/htmlcleaner -->
 		<htmlcleaner.version>2.22</htmlcleaner.version>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
-		<junit4.version>4.12</junit4.version>
+		<junit4.version>4.13.1</junit4.version>
 		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
 		<mockito-all.version>1.10.19</mockito-all.version>
 		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox-lucene -->
