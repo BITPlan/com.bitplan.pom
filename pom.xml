@@ -522,7 +522,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<serverId>ossrh</serverId>
-					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
 					<!-- set to true for automation -->
 					<autoReleaseAfterClose>false</autoReleaseAfterClose>
 				</configuration>
