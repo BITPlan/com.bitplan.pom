@@ -34,3 +34,4 @@
 | 0.0.32  | 2019-05-16 | upgrades com.bitplan.javafx to 0.0.33
 | 0.0.33  | 2019-06-30 | adds jacoco coverage profile
 | 0.0.34  | 2020-03-16 | upgrades maven site and log4j
+| 0.0.35  | 2021-12-17 | upgrades log4j to 2.16.0

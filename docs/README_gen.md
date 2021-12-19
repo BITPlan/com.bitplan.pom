@@ -1,5 +1,5 @@
 ### com.bitplan.pom
-[definition of common generic maven aspects of BITPlan's projects](https://github.com/BITPlan/com.bitplan.pom/blob/master/docs/BITPlanOSProjects.md)
+definition of common generic maven aspects of BITPlan's projects
 
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.35/jar)
@@ -10,12 +10,12 @@
 [![BITPlan](http://wiki.bitplan.com/images/wiki/thumb/3/38/BITPlanLogoFontLessTransparent.png/198px-BITPlanLogoFontLessTransparent.png)](http://www.bitplan.com)
 
 ### Documentation
-* [Wiki](https://github.com/BITPlan/com.bitplan.pom/blob/master/docs/BITPlanOSProjects.md)
+* [Wiki]()
 ### Maven dependency
 
 Maven dependency
 ```xml
-<!-- definition of common generic maven aspects of BITPlan's projects https://github.com/BITPlan/com.bitplan.pom/blob/master/docs/BITPlanOSProjects.md -->
+<!-- definition of common generic maven aspects of BITPlan's projects  -->
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
