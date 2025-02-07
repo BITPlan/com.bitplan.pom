@@ -35,3 +35,5 @@
 | 0.0.33  | 2019-06-30 | adds jacoco coverage profile
 | 0.0.34  | 2020-03-16 | upgrades maven site and log4j
 | 0.0.35  | 2021-12-17 | upgrades log4j to 2.16.0
+| 0.0.36  | 2025-02-07 | Bump gson 2.8.5→2.8.9, junit 4.12→4.13.1
+| 0.0.37  | 2025-02-07 | Bump commons-io:commons-io 2.7→2.14.0

@@ -2,7 +2,7 @@
 [definition of common generic maven aspects of BITPlan's projects](https://github.com/BITPlan/com.bitplan.pom/blob/master/docs/BITPlanOSProjects.md)
 
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.36/jar)
+[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.37/jar)
 
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
@@ -19,11 +19,11 @@ Maven dependency
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
-  <version>0.0.36</version>
+  <version>0.0.37</version>
 </dependency>
 ```
 
-[Current release at repo1.maven.org](https://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.36/)
+[Current release at repo1.maven.org](https://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.37/)
 
 ### How to build
 ```
@@ -68,3 +68,5 @@ mvn install
 | 0.0.33  | 2019-06-30 | adds jacoco coverage profile
 | 0.0.34  | 2020-03-16 | upgrades maven site and log4j
 | 0.0.35  | 2021-12-17 | upgrades log4j to 2.16.0
+| 0.0.36  | 2025-02-07 | Bump gson 2.8.5→2.8.9, junit 4.12→4.13.1
+| 0.0.37  | 2025-02-07 | Bump commons-io:commons-io 2.7→2.14.0

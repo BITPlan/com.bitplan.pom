@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bitplan.pom</groupId>
 	<artifactId>com.bitplan.pom</artifactId>
-	<version>0.0.36</version>
+	<version>0.0.37</version>
 	<packaging>pom</packaging>
 	<name>BITPlan Maven Parent POM</name>
 	<description>definition of common generic maven aspects of BITPlan's projects</description>
@@ -516,7 +516,7 @@
 				Nexus Staging Maven Plugin for Deployment and Release The Nexus Staging Maven
 				Plugin is the recommended way to deploy your components to OSSRH and release
 				them to the Central Repository. To configure it simply add the plugin to
-				your Maven pom.xml. 
+				your Maven pom.xml.
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
