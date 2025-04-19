@@ -37,3 +37,4 @@
 | 0.0.35  | 2021-12-17 | upgrades log4j to 2.16.0
 | 0.0.36  | 2025-02-07 | Bump gson 2.8.5→2.8.9, junit 4.12→4.13.1
 | 0.0.37  | 2025-02-07 | Bump commons-io:commons-io 2.7→2.14.0
+| 0.0.38  | 2025-04-19 | upgrades log4j to 2.17.2 and tries avoid older versions
