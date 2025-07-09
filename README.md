@@ -2,7 +2,7 @@
 [definition of common generic maven aspects of BITPlan's projects](https://github.com/BITPlan/com.bitplan.pom/blob/master/docs/BITPlanOSProjects.md)
 
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.38/jar)
+[![Maven Central](https://img.shields.io/maven-central/v/com.bitplan.pom/com.bitplan.pom.svg)](https://search.maven.org/artifact/com.bitplan.pom/com.bitplan.pom/0.0.39/jar)
 
 [![GitHub issues](https://img.shields.io/github/issues/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues)
 [![GitHub issues](https://img.shields.io/github/issues-closed/BITPlan/com.bitplan.pom.svg)](https://github.com/BITPlan/com.bitplan.pom/issues/?q=is%3Aissue+is%3Aclosed)
@@ -19,11 +19,11 @@ Maven dependency
 <dependency>
   <groupId>com.bitplan.pom</groupId>
   <artifactId>com.bitplan.pom</artifactId>
-  <version>0.0.38</version>
+  <version>0.0.39</version>
 </dependency>
 ```
 
-[Current release at repo1.maven.org](https://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.38/)
+[Current release at repo1.maven.org](https://repo1.maven.org/maven2/com/bitplan/pom/com.bitplan.pom/0.0.39/)
 
 ### How to build
 ```
@@ -70,3 +70,5 @@ mvn install
 | 0.0.35  | 2021-12-17 | upgrades log4j to 2.16.0
 | 0.0.36  | 2025-02-07 | Bump gson 2.8.5→2.8.9, junit 4.12→4.13.1
 | 0.0.37  | 2025-02-07 | Bump commons-io:commons-io 2.7→2.14.0
+| 0.0.38  | 2025-04-19 | upgrades log4j to 2.17.2 and tries avoid older versions
+| 0.0.39  | 2025-07-09 | upgrades several libraries
