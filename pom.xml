@@ -137,7 +137,7 @@ https://github.com/BITPlan/com.bitplan.pom -->
 		<hamcrest-all.version>1.3</hamcrest-all.version>
 		<!--
 		https://mvnrepository.com/artifact/net.sourceforge.htmlcleaner/htmlcleaner -->
-		<htmlcleaner.version>2.22</htmlcleaner.version>
+		<htmlcleaner.version>2.29</htmlcleaner.version>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<junit4.version>4.13.2</junit4.version>
 		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
